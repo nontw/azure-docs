@@ -78,11 +78,13 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-aad --aad-admin-gr
 
 A successful creation of an AKS-managed Azure AD cluster has the following section in the response body
 ```output
-"AADProfile": {
+"aadProfile": {
     "adminGroupObjectIds": [
       "5d24****-****-****-****-****afa27aed"
     ],
+    "adminUsers": null,
     "clientAppId": null,
+    "enableAzureRbac": false,
     "managed": true,
     "serverAppId": null,
     "serverAppSecret": null,
